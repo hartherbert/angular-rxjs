@@ -8,7 +8,7 @@ import { takeUntil } from 'rxjs/operators';
     <mat-chip-list>
       <span *ngIf="title">{{ title }}</span>
       <mat-chip>Subscribed</mat-chip>
-      <mat-chip *ngFor="let value of values" color="primary" selected>{{
+      <mat-chip *ngFor="let value of values" color="accent" selected>{{
         value | json
       }}</mat-chip>
       <mat-chip *ngIf="isErrored" color="warn" selected>{{ error }}</mat-chip>

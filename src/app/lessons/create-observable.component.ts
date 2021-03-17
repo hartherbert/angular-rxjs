@@ -53,7 +53,7 @@ export class CreateObservableComponent {
     observer.complete();
   });
 
-  public of$ = of('Hello', 'Banana');
+  public of$ = of('Hello', 'Banana', 1, { fun: true });
 
   public from$ = from('Hello');
 
