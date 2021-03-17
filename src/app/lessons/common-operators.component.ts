@@ -28,7 +28,7 @@ import {
 @Component({
   selector: 'app-common-operators',
   template: `
-    <div class="container">
+    <div class="single-card-container">
       <mat-card>
         <mat-card-header>
           <mat-card-title>map</mat-card-title>
@@ -340,13 +340,6 @@ import {
       </mat-card>
     </div>
   `,
-  styles: [
-    `
-      .container > mat-card {
-        margin-bottom: 1rem;
-      }
-    `,
-  ],
 })
 export class CommonOperatorsComponent {
   private subject = new Subject();

@@ -6,6 +6,8 @@ import { SubjectComponent } from './lessons/subject.component';
 import { CommonOperatorsComponent } from './lessons/common-operators.component';
 import { MoreInfoComponent } from './lessons/more-info.component';
 import { HomeComponent } from './home/home.component';
+import { HttpClientComponent } from './lessons/http-client.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
   {
@@ -29,10 +31,18 @@ const routes: Routes = [
         component: CommonOperatorsComponent,
       },
       {
+        path: 'http-client',
+        component: HttpClientComponent,
+      },
+      {
         path: 'more-info',
         component: MoreInfoComponent,
       },
     ],
+  },
+  {
+    path: '**',
+    component: NotFoundComponent,
   },
 ];
 

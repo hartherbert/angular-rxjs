@@ -4,7 +4,7 @@ import { BehaviorSubject, Observable, ReplaySubject, Subject } from 'rxjs';
 @Component({
   selector: 'app-subject',
   template: `
-    <div class="container">
+    <div class="single-card-container">
       <mat-card>
         <mat-card-header>
           <mat-card-title>Subject</mat-card-title>
@@ -72,13 +72,6 @@ import { BehaviorSubject, Observable, ReplaySubject, Subject } from 'rxjs';
       </mat-card>
     </div>
   `,
-  styles: [
-    `
-      .container > mat-card {
-        margin-bottom: 1rem;
-      }
-    `,
-  ],
 })
 export class SubjectComponent implements OnInit {
   public subjects$: Observable<any>[] = [];

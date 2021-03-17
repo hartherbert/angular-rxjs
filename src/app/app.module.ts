@@ -18,6 +18,11 @@ import { SubjectComponent } from './lessons/subject.component';
 import { CommonOperatorsComponent } from './lessons/common-operators.component';
 import { MoreInfoComponent } from './lessons/more-info.component';
 import { HomeComponent } from './home/home.component';
+import { HttpClientComponent } from './lessons/http-client.component';
+import { HttpClientModule } from '@angular/common/http';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +34,8 @@ import { HomeComponent } from './home/home.component';
     CommonOperatorsComponent,
     MoreInfoComponent,
     HomeComponent,
+    HttpClientComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,6 +49,9 @@ import { HomeComponent } from './home/home.component';
     MatListModule,
     MatChipsModule,
     MatCardModule,
+    MatInputModule,
+    HttpClientModule,
+    MatFormFieldModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

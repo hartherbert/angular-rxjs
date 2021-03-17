@@ -4,7 +4,7 @@ import { from, Observable, of } from 'rxjs';
 @Component({
   selector: 'app-create-observable',
   template: `
-    <div class="container">
+    <div class="single-card-container">
       <mat-card>
         <mat-card-header>
           <mat-card-title>Constructor</mat-card-title>
@@ -38,13 +38,6 @@ import { from, Observable, of } from 'rxjs';
       </mat-card>
     </div>
   `,
-  styles: [
-    `
-      .container > mat-card {
-        margin-bottom: 1rem;
-      }
-    `,
-  ],
 })
 export class CreateObservableComponent {
   public withConstructor$ = new Observable<any>((observer) => {
