@@ -13,7 +13,7 @@ import { MatListModule } from '@angular/material/list';
 import { CreateObservableComponent } from './lessons/create-observable.component';
 import { MatChipsModule } from '@angular/material/chips';
 import { ObservablePrinterComponent } from './observable-printer/observable-printer.component';
-import {MatCardModule} from '@angular/material/card';
+import { MatCardModule } from '@angular/material/card';
 import { SubjectComponent } from './lessons/subject.component';
 import { CommonOperatorsComponent } from './lessons/common-operators.component';
 import { MoreInfoComponent } from './lessons/more-info.component';
@@ -28,7 +28,7 @@ import { HomeComponent } from './home/home.component';
     SubjectComponent,
     CommonOperatorsComponent,
     MoreInfoComponent,
-    HomeComponent
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,9 +41,9 @@ import { HomeComponent } from './home/home.component';
     MatIconModule,
     MatListModule,
     MatChipsModule,
-    MatCardModule
+    MatCardModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
