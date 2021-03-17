@@ -36,14 +36,6 @@ import { from, Observable, of } from 'rxjs';
           [printable$]="notEmittingLast$"
         ></app-observable-printer>
       </mat-card>
-
-      <mat-card>
-        <mat-card-header>
-          <mat-card-title>Emitting after complete</mat-card-title>
-        </mat-card-header>
-        <div *ngFor="let user of getUsers() | async"></div>
-        <p>{{ getUsers() | async | json }}</p>
-      </mat-card>
     </div>
   `,
   styles: [
